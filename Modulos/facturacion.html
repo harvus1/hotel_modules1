@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/facturacion-style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/facturacion-style.css" />
     <title>Document</title>
 </head>
 
@@ -13,33 +13,175 @@
     <header>
         <nav class="navbar-facturacion">
             <div class="nav-leftside">
-                <figure><img
-                        src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.hotelannainn.com/wp-content/uploads/2019/05/logo-anna-in-blanco.png"
-                        alt="logo"></figure>
+                <figure>
+                    <img src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.hotelannainn.com/wp-content/uploads/2019/05/logo-anna-in-blanco.png"
+                        alt="logo" />
+                </figure>
             </div>
             <div class="nav-rightside">
                 <ul class="nav-item-container">
-                    <li><a href="./main.html"><img src="./icons/1564508_home_main_room_estate_property_icon.svg"
-                                alt="home-icon" class="icon"></a></li>
-                    <li><a href="./facturacion.html"><img src="./icons/4781840_+_add_circle_create_expand_icon.svg"
-                                alt="new-icon" class="icon"></a></li>
+                    <li>
+                        <a href="./main.html"><img src="./icons/1564508_home_main_room_estate_property_icon.svg"
+                                alt="home-icon" class="icon" /></a>
+                    </li>
+                    <li>
+                        <a href="./facturacion.html"><img src="./icons/4781840_+_add_circle_create_expand_icon.svg"
+                                alt="new-icon" class="icon" /></a>
+                    </li>
                 </ul>
             </div>
         </nav>
-
     </header>
     <main class="main-facturacion">
-        <aside></aside>
+        <aside>
+            <a href="./inventarios.html"><span>Inventario</span></a>
+            <a href="./reservaciones.html"><span>Reservaciones</span></a>
+        </aside>
         <section>
             <div class="main-title">
                 <h1>Facturacion</h1>
             </div>
+            <div class="top-buttons">
+                <div class="left-buttons">
+                    <button type="submit">Seleccionar Cliente</button>
+                </div>
+                <div class="right-buttons">
+                    <button type="submit">Agregar Cliente</button>
+                    <button type="submit">Nuevo Cliente</button>
+                </div>
+            </div>
+            <!-- TOP INPUTS -->
+            <div class="top-inputs">
+                <form class="input-container">
+                    <p>
+                        <label for="input-tipo-cliente">
+                            <span><b>Tipo</b></span>
+                            <select name="tipo-cliente" id="input-tipo-cliente">
+                                <option value="Nuevo">Nuevo</option>
+                                <option value="Frecuente">Frecuente</option>
+                                <option value="Especial">Especial</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="input-nit">
+                            <span><b>NIT</b></span>
+                            <input type="number" id="input-nit" name="input-nit" autocomplete="cc-number" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="input-cliente">
+                            <span><b>Cliente</b></span>
+                            <input type="text" name="input-cliente" id="input-cliente" autocomplete="name" />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="input-adress">
+                            <span><b>Direccion</b></span>
+                            <input type="text" name="input-adress" id="input-adress" autocomplete="address-line1" />
+                        </label>
+                    </p>
+                </form>
+            </div>
+
+            <!-- MIDDLE INPUTS -->
+            <div class="middle-inputs">
+                <form class="input-container">
+                    <p>
+                        <label for="telephone-input">
+                            <span><b>Telefono</b></span>
+                            <input type="number" name="telephone-input" id="telephone-input" autocomplete="cc-number" />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="date-input">
+                            <span><b>Fecha</b></span>
+                            <input type="date" name="date-input" id="date-input" />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="seller-input">
+                            <span><b>Vendedor</b></span>
+                            <select name="seller-input" id="seller-input">
+                                <option value="Name1">Name1</option>
+                                <option value="Name2">Name2</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="payment-input">
+                            <span><b>Forma de Pago</b></span>
+                            <select name="payment-input" id="payment-input">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta de Credito/Debito">Tarjeta de Credito/Debito</option>
+                            </select>
+                        </label>
+                    </p>
+                </form>
+            </div>
+
+            <!-- BOTTOM INPUTS -->
+            <div class="bottom-inputs">
+                <form class="input-container">
+                    <p class="room-buttons-inputs">
+                        <label for="room-input">
+                            <select id="room-input" name="room-input">
+                                <option value="Sencilla">Sencilla</option>
+                                <option value="Doble">Doble</option>
+                                <option value="Triple">Triple</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Suite Compartida">Suite Compartida</option>
+                            </select>
+
+                        </label>
+                        <button type="submit" class="first-button">Agregar Habitacion</button>
+                        <button type="submit" class="second-button">Borrar Factura</button>
+                    </p>
+                </form>
+            </div>
+
+            <!-- TABLE -->
+            <div class="table">
+
+                <table class="table-info" id="facturation-table">
+                    <tbody>
+                        <tr>
+                            <th>CODIGO</th>
+                            <th>CANT.</th>
+                            <th>HABITACION</th>
+                            <th>PRECIO</th>
+                            <th>DESCUENTO</th>
+                            <th>PRECIO TOTAL</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Simple</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Simple</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BOTTOM BUTTONS -->
+            <div class="bottom-buttons">
+                <button type="submit">Pagar y Terminar</button>
+                <button type="submit">Terminar</button>
+                <button type="submit">Imprimir y Terminar</button>
+            </div>
         </section>
-
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
