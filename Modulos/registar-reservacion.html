@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registrar-reservacion-style.css">
+    <title>Registrar Reservacion</title>
+</head>
+
+<body>
+    <div class="register-entrance">
+        <div class="form-container">
+            <h1 class="title">Registrar Reservacion</h1>
+            <form action="" class="register-entrance-form">
+                <label for="rooms">
+                    <span><b>Tipo de Habitacion</b></span>
+                    <div class="content-select">
+                        <select name="rooms-types" id="rooms" class="select-room-type">
+                            <option value="Sencilla">Sencilla</option>
+                            <option value="Doble">Doble</option>
+                            <option value="Triple">Triple</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Suite Compartida">Suite Compartida</option>
+                        </select>
+                        <i></i>
+                    </div>
+
+                </label>
+
+                <label for="name" class="name-label">
+                    <span><b>Nombre</b><br></span>
+                    <input type="text" name="name" id="name" autocomplete="name" required>
+                </label>
+
+                <label for="email" class="email-label">
+                    <span><b>Correo Electronico</b><br></span>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                </label>
+
+                <label for="telephone" class="telephone-label">
+                    <span><b>Telefono</b><br></span>
+                    <input type="tel" name="telephone" id="telephone" autocomplete="telephone" required>
+                </label>
+
+                <label for="date-start">
+                    <span><b>Fecha Entrada</b><br></span>
+                    <input type="date" name="date-start" id="name-start" required>
+                </label>
+
+                <label for="date-end">
+                    <span><b>Fecha Salida</b><br></span>
+                    <input type="date" name="date-end" id="name-end" required>
+                </label>
+
+
+
+            </form>
+            <div class="form-buttons">
+                <!-- <button type="submit">Guardar</button>
+                <button type="submit"> <a href="./reservaciones.html"> Regresar</a></button>
+                <button type="submit"> <a href="./main.html">Salir</a> </button> -->
+                <button class="btn">Guardar</button>
+                <button class="btn"> <a href="./reservaciones.html">Regresar</a> </button>
+                <button class="btn"> <a href="./main.html">Salir</a> </button>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
