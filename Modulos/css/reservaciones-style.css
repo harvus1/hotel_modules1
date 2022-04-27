@@ -168,3 +168,43 @@ section {
 }
 
 
+.table-info{
+  margin-top: 30px;
+  font-size: inherit;
+  font-family: inherit;
+  border-collapse: collapse;
+  border-spacing: 0 ;
+  width: 100%;
+  border-radius: .4em;
+
+}
+
+.table-info tbody{
+display: table-row-group;
+  vertical-align: middle;
+  border-color: #feca00;
+}
+
+.table-info tr:nth-child(odd){
+  background-color: #fff;
+}
+.table-info tr{
+  border-bottom: 1px solid #ddd;
+}
+
+.table-info th{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #030000;
+  color: white;
+  padding: 8px;
+  font-family:"Signika", sans-serif;
+}
+
+.table-info tr td{
+  color: #030000;
+  font-size:1.3rem;
+  text-align: center;
+  font-family: inherit;
+  padding: 8px;
+}
